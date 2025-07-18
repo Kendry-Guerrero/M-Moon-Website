@@ -1,0 +1,31 @@
+.contact-page-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    width: 100%;
+    height: 100svh;
+    font-size: 1.3em;
+    padding: 20px;
+}
+.contact-page-cont > p{
+    font-family: 'helvetica';
+}
+.contact-page-cont >h3{
+    font-family: 'cinzel decorative regular';
+}
+.contact-page-cont > ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 500px){
+    .contact-page-cont{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,24 @@
+/* Page btns container*/
+.desktop-btn-cont {
+  position: relative;
+  right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  padding-right: 20px;
+  width: 460px; 
+  height: 90%; 
+}
+.desktop-btn-text{
+  font-family: 'cinzel decorative regular';
+  font-size: 1.5em;
+}
+.current-route{
+  font-size: 1.5em;
+  font-family: 'cinzel decorative regular';
+  border-bottom: 1px solid #FF6E40;
+}
+
+

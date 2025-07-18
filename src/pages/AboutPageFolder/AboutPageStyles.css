@@ -1,0 +1,155 @@
+/* PAGE */
+
+.about-page-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    padding-top: 130px;
+}
+
+
+.about-author-title {
+    text-align: center;
+    font-family: 'cinzel decorative regular';
+
+    width: 100%;
+    color: var(--primary-accent-text-color);
+
+
+}
+
+.about-author-desc {
+    position: relative;
+    font-family: 'helvetica';
+    left: 15%;
+    width: 70%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 50px;
+    color: var(--secondary-accent-text-color);
+
+}
+
+.about-person-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-person-title {
+    display: inline-flex;
+    height: 60px;
+    justify-content: center;
+    font-family: 'cinzel decorative regular';
+    text-align: center;
+    color: var(--primary-accent-text-color);
+}
+
+.about-person-list-cont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 500px;
+    color: var(--secondary-accent-text-color);
+}
+
+#list-cont {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    align-items: center;
+
+    width: 80%;
+    height: 90%;
+
+}
+
+#list-cont>li {
+    display: inline-flex;
+    justify-content: center;
+      font-family: 'helvetica';
+
+}
+
+
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .about-author-desc {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: left;
+        text-align: center;
+        padding: 50px;
+        color: var(--secondary-accent-text-color);
+    }
+
+    .about-person-list-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: flex-start;
+        gap: 1;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 40px;
+        height: 600px;
+    }
+
+    #list-cont {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        list-style: none;
+    }
+}
+
+/* TABLET */
+@Media (min-width: 500px) and (max-width: 1024px) {
+
+    .about-person-list-cont {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        position: relative;
+        top: 0%;
+        left: 7%;
+        width: 86%;
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 500px;
+    }
+
+    #list-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        gap: 20px;
+
+    }
+
+    #list-cont>li {
+        display: inline-flex;
+        justify-content: center;
+
+    }
+}

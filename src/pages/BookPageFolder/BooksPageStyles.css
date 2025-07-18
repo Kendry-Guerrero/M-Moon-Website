@@ -1,0 +1,221 @@
+.books-page-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding-top: 15svh;
+
+}
+
+
+.saga-cont {
+    width: 100%;
+    height: 100px;
+}
+
+
+.saga-title,
+.reading-order-txt {
+    text-align: center;
+}
+
+.saga-title {
+    width: 100%;
+    height: 45px;
+    font-size: 1.6em;
+    font-family: 'cinzel decorative regular';
+    color: var(--primary-accent-text-color);
+}
+
+.reading-order-txt {
+    padding-left: 20px;
+    color: var(--secondary-accent-text-color);
+    font-family: 'helvetica';
+}
+
+
+.saga-books-cont {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-rows: repeat(3, 1fr) 100px;
+    row-gap: 150px;
+}
+
+.saga-book-cont {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.saga-book-cover-cont {
+    position: relative;
+    top: 5%;
+    height: 300px;
+    width: 200px;
+}
+
+.saga-book-info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    height: 90%;
+}
+
+.saga-book-desc {
+    font-size: 1.5em;
+    font-family: 'helvetica';
+    color: var(--secondary-accent-text-color);
+}
+
+
+.saga-book-info-cont>div {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+}
+
+.tropes {
+    color: var(--secondary-accent-text-color);
+    font-family: 'helvetica';
+}
+
+.saga-book-info-cont>div>div {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 300px;
+}
+
+.saga-book-info-cont>div>div>button {
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    font-family: 'helvetica';
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.buy-book-normal {
+    border: none;
+    background-color: var(--primary-accent-color);
+    height: 20px;
+    color: #2B2B2B;
+}
+
+.buy-book-special {
+    background-color: transparent;
+    border: 1px solid var(--primary-accent-color);
+    color: var(--secondary-accent-text-color)
+}
+
+.book-progress-bar {
+    position: relative;
+    top: 2%;
+    color: var(--secondary-accent-text-color);
+    font-size: 0.9em;
+    width: 50%;
+    height: 60px;
+    border-radius: 7px;
+    background-color: rgba(63, 62, 62, 0.9);
+    text-align: center;
+}
+
+
+
+
+
+/* PHONE  */
+@media(max-width: 500px) {
+
+    .saga-book-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 100%;
+    }
+
+    .saga-book-cover-cont {
+        position: relative;
+        top: 0%;
+        height: 300px;
+        width: 200px;
+
+    }
+
+    .saga-book-info-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .saga-book-desc {
+        display: none;
+        font-size: 1.5em;
+        color: var(--secondary-accent-text-color);
+    }
+
+
+    .saga-book-info-cont>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100%;
+    }
+
+
+    .saga-book-info-cont>div>div>button {
+        border-radius: 5px;
+        height: 30px;
+        width: 140px;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+    .book-progress-bar {
+        position: relative;
+        top: 2%;
+        color: var(--primary-accent-text-color);
+        font-size: 0.9em;
+        width: 100%;
+        height: 60px;
+        border-radius: 7px;
+        background-color: rgba(63, 62, 62, 0.9);
+        text-align: center;
+    }
+}
+
+
+
+/* TABLET */
+@media (min-width: 500px) and (max-width: 1024px) {
+
+    .saga-book-cover-cont {
+        position: relative;
+        top: 0%;
+        height: 300px;
+        width: 200px;
+    }
+
+    .saga-book-desc {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,33 @@
+.faq-page-cont {
+    display: flex;
+    justify-content: center;
+    width: 100svw;
+    height: 100svh;
+    position: relative;
+}
+.questions-list-cont {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    gap: 15px;
+    height: 70svh;
+    width: 90svw;
+    padding: 30px;
+    color: var(--primary-link-text-color);
+    list-style: none;
+    overflow: scroll;
+    -ms-overflow-style-x: none;
+    scrollbar-width: none;
+}
+.question-cont > h3 {
+    color: var(--primary-accent-text-color);
+    font-family: 'cinzel decorative regular';
+
+}
+.question-cont > p {
+    color: var(--secondary-accent-text-color);
+      font-family: 'helvetica';
+
+}
+
